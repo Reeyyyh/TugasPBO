@@ -1,52 +1,31 @@
-public class chickens01 {
+public class Chickens01 {
+
+    public static int hasil(int TelurPerAyam, int JumlahAyam) {
+        int total;
+        int penyimpanan = 0;
+        //hari senin
+        total = TelurPerAyam * JumlahAyam;
+        penyimpanan += total;
+        //hari selasa
+        JumlahAyam++;
+        total = TelurPerAyam * JumlahAyam;
+        penyimpanan += total;
+        //hasi rabu
+        total = TelurPerAyam * (JumlahAyam / 2);
+        penyimpanan += total;
+        
+        return penyimpanan;
+    }
+
     public static void main(String[] args) {
 
-        // scenario 1
+        //scenario 1
         // telur per ayam = 5, jumlah ayam = 3;
-        int chiken1, egg1, simpan1;
-        int scen1;
-        int beast1;
-        simpan1 = 0;
-        chiken1 = 3;
-        egg1 = 5;
-        scen1 = chiken1 * egg1;
-        simpan1 = simpan1 + scen1;
-        System.out.println("scan 1");
-        System.out.println("pada hari senin : "+simpan1);
-        chiken1++;
-        scen1 = chiken1 * egg1;
-        simpan1 = simpan1 + scen1;
-        System.out.println("\n"+"pada hari selasa : "+simpan1);
-        beast1 = 2;
-        chiken1 =  chiken1 / beruang1;
-        scen1 = chiken1 * egg1;
-        simpan1 = simpan1 + scen1;
-        System.out.println("\n"+"pada hari rabu : "+simpan1);
+        System.out.println("Scenario 1 : "+hasil(5, 3)); // hasil = 45
 
-        System.out.println("=================================================================");
-        //scenario 2
-        //telur per ayam = 4, jumlah ayam = 8
-        int chiken2, egg2, simpan2;
-        int scen2;
-        int beast2;
-        simpan2 = 0;
-        chiken2 = 8;
-        egg2 = 4;
-        scen2 = chiken2 * egg2;
-        simpan2 = simpan2 + scen2;
-        System.out.println("scan 2");
-        System.out.println("pada hari senin : "+simpan2);
-        chiken2++;
-        scen2 = chiken2 * egg2;
-        simpan2 = simpan2 + scen2;
-        System.out.println("\n"+"pada hari selasa : "+simpan2);
-        beast2 = 2;
-        chiken2 =  chiken2 / beruang2;
-        scen2 = chiken2 * egg2;
-        simpan2 = simpan2 + scen2;
-        System.out.println("\n"+"pada hari rabu : "+simpan2);
-
+        // scenario 2
+        // telur per ayam = 4, jumlah ayam = 8;
+        System.out.println("Scenario 2 : "+hasil(4, 8)); // hasil = 84
+        
     }
 }
-
-// tugas 1
