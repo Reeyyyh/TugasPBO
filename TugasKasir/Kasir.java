@@ -1,6 +1,6 @@
 package TugasKasir;
 
-public class HargaMenu {
+public class Kasir {
 
     private int Harga;
 
@@ -13,5 +13,7 @@ public class HargaMenu {
     public void SetHarga(int harga) {
         this.Harga += harga;
     }
+
+    
 
 }
