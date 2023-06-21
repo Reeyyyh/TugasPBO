@@ -1,4 +1,4 @@
 # TugasPBO
 # Nama : Mohamad Raihan
-# Nim  : 202210370311011
+# Nim  : 011
 # Informatika A
